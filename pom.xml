@@ -34,8 +34,9 @@
 		<mvn.failsafe.plugin.version>3.0.0-M4</mvn.failsafe.plugin.version>
 		<mvn.surefire.plugin.version>3.0.0-M4</mvn.surefire.plugin.version>
 		<mvn.jacoco.plugin.version>0.8.5</mvn.jacoco.plugin.version>
-		<mvn.source.plugin.version>3.2.0</mvn.source.plugin.version>
 		<mvn.fmt.plugin.version>2.10.0</mvn.fmt.plugin.version>
+		<mvn.dependency.plugin.version>3.1.1</mvn.dependency.plugin.version>
+		<mvn.source.plugin.version>3.2.0</mvn.source.plugin.version>
 		<mvn.ear.plugin.version>3.0.1</mvn.ear.plugin.version>
 		<mvn.ejb.plugin.version>3.0.1</mvn.ejb.plugin.version>
 		<mvn.war.plugin.version>3.2.2</mvn.war.plugin.version>
@@ -59,10 +60,10 @@
 		<lombok.version>1.18.12</lombok.version>
 		<slf4j.version>1.7.25</slf4j.version>
 		<log4j.bridge.version>2.9.0</log4j.bridge.version>
-		<log4j.version>2.11.1</log4j.version>
+		<log4j.version>2.13.3</log4j.version>
 		<derby.version>10.14.2.0</derby.version>
-		<junit.version>5.5.2</junit.version>
-		<mockito.version>3.2.4</mockito.version>
+		<junit.version>5.6.2</junit.version>
+		<mockito.version>3.3.3</mockito.version>
 	</properties>
 
 	<modules>
@@ -278,6 +279,38 @@
 					<execution>
 						<goals>
 							<goal>format</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>${mvn.dependency.plugin.version}</version>
+				<executions>
+					<execution>
+						<id>copy-dependencies</id>
+						<phase>package</phase>
+						<goals>
+							<goal>copy-dependencies</goal>
+						</goals>
+						<configuration>
+							<includeArtifactIds>lombok</includeArtifactIds>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>${mvn.source.plugin.version}</version>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar</goal>
 						</goals>
 					</execution>
 				</executions>
