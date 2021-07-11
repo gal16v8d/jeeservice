@@ -57,13 +57,13 @@
 		
 		<!-- Logger api -->
 		<javaee-api.version>8.0</javaee-api.version>
-		<lombok.version>1.18.12</lombok.version>
+		<lombok.version>1.18.20</lombok.version>
 		<slf4j.version>1.7.25</slf4j.version>
 		<log4j.bridge.version>2.9.0</log4j.bridge.version>
 		<log4j.version>2.13.3</log4j.version>
 		<derby.version>10.14.2.0</derby.version>
-		<junit.version>5.6.2</junit.version>
-		<mockito.version>3.3.3</mockito.version>
+		<junit.version>5.7.2</junit.version>
+		<mockito.version>3.9.0</mockito.version>
 	</properties>
 
 	<modules>
