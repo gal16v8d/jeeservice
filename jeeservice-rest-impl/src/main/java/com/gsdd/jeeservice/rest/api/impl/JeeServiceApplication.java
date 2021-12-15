@@ -1,4 +1,4 @@
-package co.com.gsdd.jeeservice.rest.api.impl;
+package com.gsdd.jeeservice.rest.api.impl;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;

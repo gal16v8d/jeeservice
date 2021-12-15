@@ -1,4 +1,4 @@
-package co.com.gsdd.jeeservice.model;
+package com.gsdd.jeeservice.model;
 
 import lombok.Data;
 

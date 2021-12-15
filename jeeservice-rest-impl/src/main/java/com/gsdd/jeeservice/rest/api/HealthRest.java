@@ -1,4 +1,4 @@
-package co.com.gsdd.jeeservice.rest.api;
+package com.gsdd.jeeservice.rest.api;
 
 import javax.ws.rs.HEAD;
 import javax.ws.rs.Path;
