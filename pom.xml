@@ -59,10 +59,10 @@
 		<javaee-api.version>8.0</javaee-api.version>
 		<lombok.version>1.18.24</lombok.version>
 		<slf4j.version>1.7.36</slf4j.version>
-		<log4j.version>2.17.2</log4j.version>
+		<log4j.version>2.18.0</log4j.version>
 		<derby.version>10.14.2.0</derby.version>
-		<junit.version>5.8.2</junit.version>
-		<mockito.version>4.4.0</mockito.version>
+		<junit.version>5.9.0</junit.version>
+		<mockito.version>4.7.0</mockito.version>
 	</properties>
 
 	<modules>
