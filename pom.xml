@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.gsdd</groupId>
 	<artifactId>jeeservice</artifactId>
-	<version>1.0.001</version>
+	<version>1.0.2</version>
 	<packaging>pom</packaging>
 
 	<repositories>
@@ -15,7 +15,7 @@
 		</repository>
 		<repository>
 			<id>spring.repo</id>
-			<url>http://repo.spring.io/plugins-release/</url>
+			<url>https://repo.spring.io/plugins-release/</url>
 		</repository>
 	</repositories>
 
@@ -28,15 +28,15 @@
 		<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
 		
-		<mvn.compiler.plugin.version>3.8.1</mvn.compiler.plugin.version>
+		<mvn.compiler.plugin.version>3.13.0</mvn.compiler.plugin.version>
 		<mvn.release.plugin.version>2.5.3</mvn.release.plugin.version>
 		<mvn.javadoc.plugin.version>3.1.1</mvn.javadoc.plugin.version>
-		<mvn.failsafe.plugin.version>3.0.0-M4</mvn.failsafe.plugin.version>
-		<mvn.surefire.plugin.version>3.0.0-M4</mvn.surefire.plugin.version>
-		<mvn.jacoco.plugin.version>0.8.7</mvn.jacoco.plugin.version>
+		<mvn.failsafe.plugin.version>3.5.0</mvn.failsafe.plugin.version>
+		<mvn.surefire.plugin.version>3.5.0</mvn.surefire.plugin.version>
+		<mvn.jacoco.plugin.version>0.8.12</mvn.jacoco.plugin.version>
 		<mvn.fmt.plugin.version>2.10.0</mvn.fmt.plugin.version>
-		<mvn.dependency.plugin.version>3.1.1</mvn.dependency.plugin.version>
-		<mvn.source.plugin.version>3.2.0</mvn.source.plugin.version>
+		<mvn.dependency.plugin.version>3.8.0</mvn.dependency.plugin.version>
+		<mvn.source.plugin.version>3.3.1</mvn.source.plugin.version>
 		<mvn.ear.plugin.version>3.0.1</mvn.ear.plugin.version>
 		<mvn.ejb.plugin.version>3.0.1</mvn.ejb.plugin.version>
 		<mvn.war.plugin.version>3.2.2</mvn.war.plugin.version>
@@ -57,12 +57,12 @@
 		
 		<!-- Logger api -->
 		<javaee-api.version>8.0</javaee-api.version>
-		<lombok.version>1.18.24</lombok.version>
+		<lombok.version>1.18.34</lombok.version>
 		<slf4j.version>1.7.36</slf4j.version>
 		<log4j.version>2.18.0</log4j.version>
 		<derby.version>10.14.2.0</derby.version>
-		<junit.version>5.9.0</junit.version>
-		<mockito.version>4.7.0</mockito.version>
+		<junit.version>5.11.1</junit.version>
+		<mockito.version>5.14.0</mockito.version>
 	</properties>
 
 	<modules>
